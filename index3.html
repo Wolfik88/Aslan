@@ -182,6 +182,17 @@
       #loader{ transition: none }
     }
 
+  
+    /* --- Mobile fix: keep clinic buttons on one line (iPhone widths) --- */
+    .contact-card > div:last-of-type{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+    }
+    @media (max-width: 640px){
+      .contact-card > div:last-of-type{ flex-wrap:nowrap; justify-content:space-between }
+      .contact-card > div:last-of-type a{ white-space:nowrap; flex:0 1 auto }
+      .contact-card .btn, .contact-card .btn-outline{ padding:10px 14px; font-size:14px }
+    }
+
   </style>
 </head>
 <body>
@@ -340,10 +351,10 @@
     (function(){
       const loader = document.getElementById('loader');
       const dismiss = () => loader && loader.classList.add('hidden');
-      let timeout = setTimeout(dismiss, 5000); // fallback
+      let timeout = setTimeout(dismiss, 1800); // fallback
       window.addEventListener('load', () => {
         clearTimeout(timeout);
-        setTimeout(dismiss, 1000); // short grace after load
+        setTimeout(dismiss, 400); // short grace after load
       });
       // Accessibility: allow dismiss with keyboard
       document.addEventListener('keydown', (e)=>{
