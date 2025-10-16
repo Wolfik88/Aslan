@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Аслан Ахмедович Ибрагимов — Стоматолог (хирург, ортопед, терапевт)</title>
+  <meta name="description" content="Официальная визитка врача-стоматолога Аслана Ахмедовича Ибрагимова. Имплантация, хирургия, ортопедия, терапия. Приём в Химках и Красногорске." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+  <style>
+    :root{
+      --bg:#0b0b0c;
+      --panel:#121214;
+      --soft:#161618;
+      --text:#f4f4f6;
+      --muted:#b4b6bb;
+      --red:#c71f37;
+      --accent:#e9b44c;
+      --radius:18px;
+      --shadow: 0 14px 40px rgba(0,0,0,.5);
+      --maxw: 1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(199,31,55,.25) 0%, transparent 60%) fixed,
+        linear-gradient(180deg, var(--bg), #0d0d10 40%, var(--bg));
+      color:var(--text);
+      font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.6;
+      overflow-x:hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:active,a:hover{opacity:.9}
+    header{
+      position:sticky; top:0; z-index:10;
+      background:rgba(11,11,12,.7);
+      backdrop-filter: blur(10px) saturate(130%);
+      border-bottom:1px solid rgba(233,180,76,.18);
+    }
+    .nav{max-width:var(--maxw);margin:0 auto;padding:12px 16px;display:flex;gap:14px;align-items:center}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.4px;font-size:18px}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--red),#7b0e1c);box-shadow:0 0 18px rgba(199,31,55,.8)}
+    .navlinks{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap}
+    .navlinks a{color:var(--text);font-weight:600;opacity:.9;font-size:14px;padding:8px 6px}
+    .btn{
+      display:inline-block;padding:12px 16px;border-radius:12px;font-weight:800;font-size:15px;
+      background:linear-gradient(135deg,var(--red),#7b0e1c); color:#fff; border:1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow); transition: transform .1s ease; touch-action: manipulation;
+    }
+    .btn:active{transform:scale(.98)}
+    .btn-outline{background:transparent;color:var(--accent);border:1px solid rgba(233,180,76,.45)}
+    .hero{
+      max-width:var(--maxw);margin:0 auto;padding:18px 16px 6px;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center
+    }
+    @media (max-width: 900px){ .hero{grid-template-columns:1fr;padding:12px 14px 0} }
+    h1{
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(26px, 7vw, 46px); line-height:1.12; margin:4px 0 8px;
+      letter-spacing:.2px; text-shadow:0 10px 28px rgba(0,0,0,.5)
+    }
+    .subtitle{color:var(--muted);margin-bottom:12px;font-size:14px}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid rgba(233,180,76,.18);
+      border-radius: var(--radius); padding:14px; box-shadow: var(--shadow);
+    }
+    .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+    .badge{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.12);color:#f0e8dc;background:rgba(231, 80, 92, .12);font-size:12px}
+    .portrait-wrap{display:flex;justify-content:center}
+    .portrait{
+      width:100%; max-width:420px; aspect-ratio: 3/4; border-radius:20px;
+      object-fit:cover; object-position:center; box-shadow: var(--shadow);
+      border:1px solid rgba(233,180,76,.22);
+    }
+    section{max-width:var(--maxw);margin:0 auto;padding:18px 16px}
+    .section-title{font-family:"Playfair Display", Georgia, serif;font-size: clamp(20px,5.2vw,28px);margin:0 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+    .col-4{grid-column:span 4}.col-6{grid-column:span 6}.col-8{grid-column:span 8}.col-12{grid-column:span 12}
+    @media (max-width: 900px){ .col-4,.col-6,.col-8{grid-column:span 12} }
+    .service{background:linear-gradient(180deg, rgba(199,31,55,.10), rgba(255,255,255,.02)); border:1px solid rgba(199,31,55,.25)}
+    .list{margin:0 0 0 18px; color:var(--muted); font-size:14px}
+    .contact-card a.btn{margin-right:8px;margin-bottom:8px}
+    footer{ text-align:center; color:var(--muted); padding:20px 12px 70px; border-top:1px solid rgba(233,180,76,.18); font-size:13px }
+    .stripe{height:8px;background: repeating-linear-gradient(90deg,rgba(199,31,55,.9) 0 40px,transparent 40px 60px)}
+    /* Mobile call bar */
+    .callbar{
+      position:fixed; bottom:0; left:0; right:0; z-index:20;
+      display:none; gap:8px; padding:10px 12px;
+      background:rgba(12,12,14,.86); backdrop-filter: blur(8px);
+      border-top:1px solid rgba(233,180,76,.18);
+    }
+    .callbar .btn{flex:1; text-align:center}
+    @media (max-width: 768px){ .callbar{display:flex} }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand"><span class="dot"></span><span>Аслан Ибрагимов</span></div>
+      <div class="navlinks">
+        <a href="#about">О враче</a>
+        <a href="#services">Услуги</a>
+        <a href="#education">Образование</a>
+        <a href="#clinics">Где принимает</a>
+        <a href="#prices">Стоимость</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="stripe" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Аслан Ахмедович Ибрагимов</h1>
+        <div class="subtitle">врач‑стоматолог • хирург‑имплантолог • ортопед • терапевт</div>
+        <div class="card">
+          <strong>Приём: Московская область — Химки, Красногорск</strong>
+          <div class="badges">
+            <span class="badge">Имплантация</span>
+            <span class="badge">Хирургия</span>
+            <span class="badge">Ортопедия</span>
+            <span class="badge">Терапия</span>
+            <span class="badge">Эстетика</span>
+          </div>
+        </div>
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn" href="#contacts">Позвонить</a>
+          <a class="btn btn-outline" href="#clinics">Адреса приёма</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <img class="portrait" src="aslan.jpg" alt="Доктор Ибрагимов Аслан Ахмедович" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Услуги</h2>
+      <div class="grid">
+        <div class="card service col-4"><h3>Имплантация</h3><p>Планирование по КТ, щадящие протоколы, работа с костной и мягкой тканью.</p></div>
+        <div class="card service col-4"><h3>Хирургия</h3><p>Удаление сложных зубов, пластика тканей, подготовка к протезированию.</p></div>
+        <div class="card service col-4"><h3>Ортопедия</h3><p>Коронки, виниры, мосты, тотальные решения; протезирование на имплантах.</p></div>
+        <div class="card service col-4"><h3>Терапия</h3><p>Лечение кариеса и каналов, реставрации, профилактика, гигиена.</p></div>
+        <div class="card service col-4"><h3>Эстетика</h3><p>Отбеливание, микроэстетические реставрации, коррекция формы зубов.</p></div>
+        <div class="card service col-4"><h3>Диагностика</h3><p>Консультации, цифровое планирование, mock‑up.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">О враче</h2>
+      <div class="grid">
+        <div class="card col-8">
+          <p>Практикующий стоматолог с приёмом в Химках и Красногорске. Сочетает бережную хирургию, точную ортопедию и аккуратную терапию. В работе придерживается принципов доказательной стоматологии и прозрачного планирования лечения.</p>
+        </div>
+        <div class="card col-4">
+          <div style="font-weight:700;margin-bottom:6px">Специализация</div>
+          <ul class="list">
+            <li>Имплантация единичная и множественная</li>
+            <li>Костная подготовка, пластика мягких тканей</li>
+            <li>Протезирование на имплантах и зубах</li>
+            <li>Эндодонтия, эстетические реставрации</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Образование и повышение квалификации</h2>
+      <div class="grid">
+        <div class="card col-6">
+          <h3>Базовое и ординатура</h3>
+          <ul class="list">
+            <li>Пензенский государственный университет — «Стоматология» (2021)</li>
+            <li>РМАНПО — «Стоматология общей практики», ординатура (2023)</li>
+            <li>Пензенский институт усовершенствования врачей — «Стоматология хирургическая» (2023)</li>
+            <li>Пензенский институт усовершенствования врачей — «Стоматология ортопедическая» (2023)</li>
+          </ul>
+        </div>
+        <div class="card col-6">
+          <h3>Курсы и мастер‑классы</h3>
+          <ul class="list">
+            <li>Практический курс: металлокерамические и безметалловые коронки и мосты (2015)</li>
+            <li>Реставрация зубов керамическими вкладками и винирами (2016)</li>
+          </ul>
+          <div style="color:var(--muted);font-size:14px;margin-top:8px">*Полный список сертификатов можно добавить по запросу.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clinics">
+      <h2 class="section-title">Где принимает</h2>
+      <div class="grid">
+        <div class="card contact-card col-6">
+          <h3>Клиника №1 (Химки)</h3>
+          <div>Адрес: г. Химки, ул. Московская, д. 14</div>
+          <div>Телефон: <a href="tel:+74993220098">+7 (499) 322‑00‑98</a></div>
+          <div style="margin-top:10px">
+            <a class="btn" href="tel:+74993220098">Позвонить</a>
+            <a class="btn btn-outline" href="https://himkimed.ru/doctors/ibragimov-aslan-akhmedovich.html" target="_blank" rel="noopener">Страница врача</a>
+          </div>
+        </div>
+        <div class="card contact-card col-6">
+          <h3>Dental Centre (Красногорск)</h3>
+          <div>Адрес: Красногорск, ул. им. Егорова, д. 5</div>
+          <div>Телефон: <a href="tel:+74987540110">8 (498) 754‑01‑10</a> / <a href="tel:+79263247585">8 (926) 324‑75‑85</a></div>
+          <div style="margin-top:10px">
+            <a class="btn" href="tel:+74987540110">Позвонить</a>
+            <a class="btn btn-outline" href="https://www.dental-c.ru/team.html" target="_blank" rel="noopener">Страница клиники</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices">
+      <h2 class="section-title">Стоимость</h2>
+      <div class="card">
+        <p>Первичная консультация стоматолога: <strong>от 2 100 ₽</strong> (ориентир; уточняйте при звонке). Стоимость лечения зависит от объёма и клиники; действуют прайс‑листы клиник.</p>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2 class="section-title">Контакты</h2>
+      <div class="grid">
+        <div class="card col-12">
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <a class="btn" href="tel:+74993220098">Позвонить в Химки (Клиника №1)</a>
+            <a class="btn" href="tel:+74987540110">Позвонить в Красногорск (Dental Centre)</a>
+            <a class="btn btn-outline" href="mailto:info@himkimed.ru">E‑mail (Клиника №1)</a>
+            <a class="btn btn-outline" href="mailto:info@dental-c.ru">E‑mail (Dental Centre)</a>
+          </div>
+          <div style="color:var(--muted);margin-top:10px">*Для записи звоните напрямую в клинику.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- mobile call bar -->
+  <div class="callbar">
+    <a class="btn" href="tel:+74993220098">Химки</a>
+    <a class="btn" href="tel:+74987540110">Красногорск</a>
+  </div>
+
+  <footer>© <span id="year"></span> Аслан Ахмедович Ибрагимов · Визитка врача. Стиль: чёрно‑красный, акцент — точность и уважение.</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
