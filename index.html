@@ -37,11 +37,11 @@
       -moz-osx-font-smoothing: grayscale;
     }
     a{color:var(--accent); text-decoration:none}
-    a:active,a:hover{opacity:.9}
+    a:hover{opacity:.95}
     header{
-      position:sticky; top:0; z-index:10;
-      background:rgba(11,11,12,.7);
-      backdrop-filter: blur(10px) saturate(130%);
+      position:static; /* не прилипает */
+      background:rgba(11,11,12,.6);
+      backdrop-filter: blur(6px) saturate(120%);
       border-bottom:1px solid rgba(233,180,76,.18);
     }
     .nav{max-width:var(--maxw);margin:0 auto;padding:12px 16px;display:flex;gap:14px;align-items:center}
@@ -79,7 +79,7 @@
       object-fit:cover; object-position:center; box-shadow: var(--shadow);
       border:1px solid rgba(233,180,76,.22);
     }
-    section{max-width:var(--maxw);margin:0 auto;padding:18px 16px}
+    section{max-width:var(--maxw);margin:0 auto;padding:18px 16px 22px}
     .section-title{font-family:"Playfair Display", Georgia, serif;font-size: clamp(20px,5.2vw,28px);margin:0 0 12px}
     .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
     .col-4{grid-column:span 4}.col-6{grid-column:span 6}.col-8{grid-column:span 8}.col-12{grid-column:span 12}
@@ -89,7 +89,7 @@
     .contact-card a.btn{margin-right:8px;margin-bottom:8px}
     footer{ text-align:center; color:var(--muted); padding:20px 12px 70px; border-top:1px solid rgba(233,180,76,.18); font-size:13px }
     .stripe{height:8px;background: repeating-linear-gradient(90deg,rgba(199,31,55,.9) 0 40px,transparent 40px 60px)}
-    /* Mobile call bar */
+    /* mobile call bar */
     .callbar{
       position:fixed; bottom:0; left:0; right:0; z-index:20;
       display:none; gap:8px; padding:10px 12px;
@@ -98,6 +98,13 @@
     }
     .callbar .btn{flex:1; text-align:center}
     @media (max-width: 768px){ .callbar{display:flex} }
+
+    /* Contacts: only WA/TG; one-per-row on mobile */
+    .contact-actions{display:flex;flex-wrap:wrap;gap:10px}
+    .btn-wide{display:inline-flex;align-items:center;gap:8px}
+    @media (max-width: 768px){
+      .contact-actions .btn-wide{flex:1 1 100%; justify-content:center}
+    }
   </style>
 </head>
 <body>
@@ -121,7 +128,7 @@
     <section class="hero">
       <div>
         <h1>Аслан Ахмедович Ибрагимов</h1>
-        <div class="subtitle">врач‑стоматолог • хирург‑имплантолог • ортопед • терапевт</div>
+        <div class="subtitle">врач-стоматолог • хирург-имплантолог • ортопед • терапевт</div>
         <div class="card">
           <strong>Приём: Московская область — Химки, Красногорск</strong>
           <div class="badges">
@@ -131,10 +138,6 @@
             <span class="badge">Терапия</span>
             <span class="badge">Эстетика</span>
           </div>
-        </div>
-        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
-          <a class="btn" href="#contacts">Позвонить</a>
-          <a class="btn btn-outline" href="#clinics">Адреса приёма</a>
         </div>
       </div>
       <div class="portrait-wrap">
@@ -201,7 +204,7 @@
         <div class="card contact-card col-6">
           <h3>Клиника №1 (Химки)</h3>
           <div>Адрес: г. Химки, ул. Московская, д. 14</div>
-          <div>Телефон: <a href="tel:+74993220098">+7 (499) 322‑00‑98</a></div>
+          <div>Телефон: <a href="tel:+74993220098">+7 (499) 322-00-98</a></div>
           <div style="margin-top:10px">
             <a class="btn" href="tel:+74993220098">Позвонить</a>
             <a class="btn btn-outline" href="https://himkimed.ru/doctors/ibragimov-aslan-akhmedovich.html" target="_blank" rel="noopener">Страница врача</a>
@@ -210,7 +213,7 @@
         <div class="card contact-card col-6">
           <h3>Dental Centre (Красногорск)</h3>
           <div>Адрес: Красногорск, ул. им. Егорова, д. 5</div>
-          <div>Телефон: <a href="tel:+74987540110">8 (498) 754‑01‑10</a> / <a href="tel:+79263247585">8 (926) 324‑75‑85</a></div>
+          <div>Телефон: <a href="tel:+74987540110">8 (498) 754-01-10</a> / <a href="tel:+79263247585">8 (926) 324-75-85</a></div>
           <div style="margin-top:10px">
             <a class="btn" href="tel:+74987540110">Позвонить</a>
             <a class="btn btn-outline" href="https://www.dental-c.ru/team.html" target="_blank" rel="noopener">Страница клиники</a>
@@ -222,7 +225,7 @@
     <section id="prices">
       <h2 class="section-title">Стоимость</h2>
       <div class="card">
-        <p>Первичная консультация стоматолога: <strong>от 2 100 ₽</strong> (ориентир; уточняйте при звонке). Стоимость лечения зависит от объёма и клиники; действуют прайс‑листы клиник.</p>
+        <p>Первичная консультация стоматолога: <strong>от 2 100 ₽</strong> (ориентир; уточняйте при звонке). Стоимость лечения зависит от объёма и клиники; действуют прайс-листы клиник.</p>
       </div>
     </section>
 
@@ -230,13 +233,16 @@
       <h2 class="section-title">Контакты</h2>
       <div class="grid">
         <div class="card col-12">
-          <div style="display:flex;flex-wrap:wrap;gap:10px">
-            <a class="btn" href="tel:+74993220098">Позвонить в Химки (Клиника №1)</a>
-            <a class="btn" href="tel:+74987540110">Позвонить в Красногорск (Dental Centre)</a>
-            <a class="btn btn-outline" href="mailto:info@himkimed.ru">E‑mail (Клиника №1)</a>
-            <a class="btn btn-outline" href="mailto:info@dental-c.ru">E‑mail (Dental Centre)</a>
+          <div class="contact-actions">
+            <a class="btn btn-outline btn-wide" href="https://wa.me/74993220098" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12 2C6.48 2 2 6.06 2 11.2c0 1.72.48 3.33 1.31 4.71L2 22l6.3-1.96c1.3.45 2.7.7 4.17.7 5.52 0 10-4.06 10-9.2S17.52 2 12 2z" stroke="#25D366" stroke-width="1.5"/><path d="M8.9 9.2c.14-.3.3-.3.43-.3h.33c.1 0 .24 0 .36.28.14.34.46 1.18.5 1.26.04.1.07.22-.04.36-.18.22-.5.56-.5.66 0 .13 1 .96 1.93 1.37 1 .44 1.18.36 1.36.2.17-.16.6-.62.76-.84.16-.22.32-.18.53-.1.2.08 1.3.61 1.52.72.22.1.36.16.41.26.06.1.06.6-.12 1.17-.18.58-1.1 1.06-1.51 1.12-.4.06-.9.08-1.47-.09-1.5-.46-3.34-1.5-4.4-2.69C8.3 11 7.9 10 7.84 9.42c-.06-.6.16-.92.3-1.07.13-.16.34-.15.45-.15z" fill="#25D366"/></svg>
+              <span style="margin-left:8px">Написать в WhatsApp</span>
+            </a>
+            <a class="btn btn-outline btn-wide" href="https://t.me/aslan_dent" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M21.5 3.5L2.8 10.6c-1 .38-.98 1.8.02 2.16l4.6 1.67 1.77 4.86c.36.98 1.72 1.03 2.13.07l2.1-4.92 4.77-8.9c.48-.9-.42-1.88-1.58-1.34z" fill="#229ED9"/></svg>
+              <span style="margin-left:8px">Написать в Telegram</span>
+            </a>
           </div>
-          <div style="color:var(--muted);margin-top:10px">*Для записи звоните напрямую в клинику.</div>
         </div>
       </div>
     </section>
@@ -248,7 +254,7 @@
     <a class="btn" href="tel:+74987540110">Красногорск</a>
   </div>
 
-  <footer>© <span id="year"></span> Аслан Ахмедович Ибрагимов · Визитка врача. Стиль: чёрно‑красный, акцент — точность и уважение.</footer>
+  <footer>© <span id="year"></span> Аслан Ахмедович Ибрагимов · Визитка врача. Стиль: чёрно-красный, акцент — точность и уважение.</footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
