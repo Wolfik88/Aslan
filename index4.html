@@ -1,150 +1,692 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Аслан Ахмедович Ибрагимов — Стоматолог (хирург, ортопед, терапевт)</title>
-<meta name="description" content="Официальная визитка врача-стоматолога Аслана Ахмедовича Ибрагимова. Имплантация, хирургия, ортопедия, терапия. Приём в Химках и Красногорске." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
-<style>
-:root{--bg:#0b0b0c;--panel:#121214;--text:#f4f4f6;--muted:#b4b6bb;--red:#c71f37;--accent:#e9b44c;--radius:18px;--shadow:0 14px 40px rgba(0,0,0,.5);--maxw:1200px;--neon-gold:#ffd27a}
-*{box-sizing:border-box}html,body{height:100%}body{margin:0;background:radial-gradient(1200px 600px at 80% -10%, rgba(199,31,55,.25) 0%, transparent 60%) fixed,linear-gradient(180deg, var(--bg), #0d0d10 40%, var(--bg));color:var(--text);font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-a{color:var(--accent);text-decoration:none}
-.hero{max-width:var(--maxw);margin:0 auto;padding:28px 16px 6px;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}
-@media (max-width:900px){.hero{grid-template-columns:1fr;padding:12px 14px 0}}
-h1{font-family:"Playfair Display",serif;font-size:clamp(26px,7vw,46px);line-height:1.12;margin:4px 0 8px;text-shadow:0 10px 28px rgba(0,0,0,.5)}
-.subtitle{color:var(--muted);margin-bottom:12px;font-size:14px}
-.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(233,180,76,.18);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
-.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
-.badge{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.12);color:#f0e8dc;background:rgba(231,80,92,.12);font-size:12px}
-.portrait-wrap{display:flex;justify-content:center}
-.portrait{width:100%;max-width:420px;aspect-ratio:3/4;border-radius:20px;object-fit:cover;object-position:center;box-shadow:var(--shadow);border:1px solid rgba(233,180,76,.22)}
-section{max-width:var(--maxw);margin:0 auto;padding:18px 16px 22px}
-.section-title{font-family:"Playfair Display",serif;font-size:clamp(20px,5.2vw,28px);margin:0 0 12px}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
-.col-4{grid-column:span 4}.col-6{grid-column:span 6}.col-8{grid-column:span 8}.col-12{grid-column:span 12}
-@media (max-width:900px){.col-4,.col-6,.col-8{grid-column:span 12}}
-.btn{display:inline-block;padding:12px 16px;border-radius:12px;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--red),#7b0e1c);color:#fff;border:1px solid rgba(255,255,255,.08);box-shadow:0 0 12px rgba(255,42,78,.45),0 0 26px rgba(255,210,122,.25)}
-.btn-outline{background:transparent;color:var(--accent);border:1px solid rgba(233,180,76,.45)}
-.service{display:block;cursor:pointer;user-select:none;background:linear-gradient(180deg,rgba(199,31,55,.10),rgba(255,255,255,.02));border:1px solid rgba(199,31,55,.25);padding:14px;border-radius:var(--radius)}
-.service .ico{width:22px;height:22px;margin-right:8px;color:#ffd977;vertical-align:-3px;filter:drop-shadow(0 0 6px rgba(255,217,119,.6)) drop-shadow(0 0 12px rgba(255,160,60,.35))}
-.service h3{display:inline-block;margin:0 0 8px 6px}
-#loader{position:fixed;inset:0;z-index:9999;background:radial-gradient(1000px 500px at 70% -10%, rgba(199,31,55,.25), transparent 60%),#09090b;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#f4f4f6;transition:opacity .6s ease,visibility .6s ease}
-#loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.load-badge{display:flex;gap:12px;align-items:center;padding:14px 18px;border-radius:16px;border:1px solid rgba(233,180,76,.35);box-shadow:0 0 18px rgba(255,210,122,.25),inset 0 0 18px rgba(255,210,122,.08);background:rgba(255,255,255,.02)}
-.load-dot{width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#ff5775,#b1122f);box-shadow:0 0 12px rgba(255,42,78,.65),0 0 28px rgba(255,42,78,.35);animation:throb 1.6s ease-in-out infinite}
-.load-title{font-family:"Playfair Display",serif;font-size:clamp(22px,5.5vw,40px)}
-.load-sub{color:#b4b6bb;margin-top:6px;font-size:14px;text-align:center}
-.scanline{width:200px;height:2px;margin:14px auto 0;background:linear-gradient(90deg,transparent,var(--neon-gold),transparent);filter:blur(.4px);animation:scan 2.8s ease-in-out infinite}
-@keyframes throb{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
-@keyframes scan{0%{transform:translateX(-40px)}50%{transform:translateX(40px)}100%{transform:translateX(-40px)}}
-.cert-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.cert{aspect-ratio:3/2;border-radius:12px;border:1px dashed rgba(233,180,76,.45);display:flex;align-items:center;justify-content:center;color:var(--muted);background:rgba(255,255,255,.02);cursor:pointer}.cert img{width:100%;height:100%;object-fit:cover;border-radius:12px;border:1px solid rgba(233,180,76,.35);box-shadow:0 6px 24px rgba(0,0,0,.4)}@media (max-width:900px){.cert-grid{grid-template-columns:repeat(3,1fr)}}@media (max-width:480px){.cert-grid{grid-template-columns:repeat(2,1fr)}}
-#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:9998;padding:20px}#lightbox.open{display:flex}#lightbox img{max-width:96vw;max-height:88vh;border-radius:14px;border:1px solid rgba(233,180,76,.45);box-shadow:0 0 26px rgba(233,180,76,.25),0 12px 48px rgba(0,0,0,.6)}#lightbox .close{position:absolute;top:14px;right:16px;font-size:28px;color:#ddd;cursor:pointer}
-.dots{display:flex;gap:8px;justify-content:center;margin-top:14px}.dot{width:8px;height:8px;border-radius:50%;background:rgba(233,180,76,.30);transition:background .3s ease,transform .3s ease}.dot.active{background:var(--accent);transform:scale(1.2);box-shadow:0 0 10px rgba(233,180,76,.5)}
-/* CSS :target modals */
-.srv-modal{position:fixed;inset:0;z-index:10000;display:none;align-items:flex-start;justify-content:center;background:rgba(5,5,7,.75);backdrop-filter:blur(6px);overflow:auto;padding:40px 14px}
-.srv-modal:target{display:flex}
-.srv-card{position:relative;width:min(980px,96vw);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(233,180,76,.28);border-radius:20px;box-shadow:var(--shadow)}
-.srv-head{display:flex;gap:12px;align-items:center;padding:18px 18px 6px}
-.srv-title{font-family:"Playfair Display",serif;font-size:24px;margin:0}
-.srv-sub{color:var(--muted);font-size:13px}
-.srv-body{padding:0 18px 18px}
-.srv-close{position:absolute;right:14px;top:10px;font-size:26px;color:#ddd;text-decoration:none}
-.srv-bg{position:fixed;inset:0;content:"";display:block}
-.list{margin:0 0 0 18px;color:var(--muted);font-size:14px}
-footer{text-align:center;color:var(--muted);padding:20px 12px 70px;border-top:1px solid rgba(233,180,76,.18);font-size:13px}
-.callbar{position:fixed;bottom:0;left:0;right:0;z-index:20;display:none;gap:8px;padding:10px 12px;background:rgba(12,12,14,.86);backdrop-filter:blur(8px);border-top:1px solid rgba(233,180,76,.18)}.callbar .btn{flex:1;text-align:center}@media (max-width:768px){.callbar{display:flex}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Аслан Ахмедович Ибрагимов — Стоматолог (хирург, ортопед, терапевт)</title>
+  <meta name="description" content="Официальная визитка врача-стоматолога Аслана Ахмедовича Ибрагимова. Имплантация, хирургия, ортопедия, терапия. Приём в Химках и Красногорске." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+  <style>
+    :root{
+      --bg:#0b0b0c;
+      --panel:#121214;
+      --soft:#161618;
+      --text:#f4f4f6;
+      --muted:#b4b6bb;
+      --red:#c71f37;
+      --accent:#e9b44c;
+      --radius:18px;
+      --shadow: 0 14px 40px rgba(0,0,0,.5);
+      --maxw: 1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(199,31,55,.25) 0%, transparent 60%) fixed,
+        linear-gradient(180deg, var(--bg), #0d0d10 40%, var(--bg));
+      color:var(--text);
+      font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.6;
+      overflow-x:hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{opacity:.95}
+    header{
+      position:static; /* не прилипает */
+      background:rgba(11,11,12,.6);
+      backdrop-filter: blur(6px) saturate(120%);
+      border-bottom:1px solid rgba(233,180,76,.18);
+    }
+    .nav{max-width:var(--maxw);margin:0 auto;padding:12px 16px;display:flex;gap:14px;align-items:center}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.4px;font-size:18px}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--red),#7b0e1c);box-shadow:0 0 18px rgba(199,31,55,.8)}
+    .navlinks{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap}
+    .navlinks a{color:var(--text);font-weight:600;opacity:.9;font-size:14px;padding:8px 6px}
+    .btn{
+      display:inline-block;padding:12px 16px;border-radius:12px;font-weight:800;font-size:15px;
+      background:linear-gradient(135deg,var(--red),#7b0e1c); color:#fff; border:1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow); transition: transform .1s ease; touch-action: manipulation;
+    }
+    .btn:active{transform:scale(.98)}
+    .btn-outline{background:transparent;color:var(--accent);border:1px solid rgba(233,180,76,.45)}
+    .hero{
+      max-width:var(--maxw);margin:0 auto;padding:28px 16px 6px;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center
+    }
+    @media (max-width: 900px){ .hero{grid-template-columns:1fr;padding:12px 14px 0} }
+    h1{
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(26px, 7vw, 46px); line-height:1.12; margin:4px 0 8px;
+      letter-spacing:.2px; text-shadow:0 10px 28px rgba(0,0,0,.5)
+    }
+    .subtitle{color:var(--muted);margin-bottom:12px;font-size:14px}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid rgba(233,180,76,.18);
+      border-radius: var(--radius); padding:14px; box-shadow: var(--shadow);
+    }
+    .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+    .badge{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.12);color:#f0e8dc;background:rgba(231, 80, 92, .12);font-size:12px}
+    .portrait-wrap{display:flex;justify-content:center}
+    .portrait{
+      width:100%; max-width:420px; aspect-ratio: 3/4; border-radius:20px;
+      object-fit:cover; object-position:center; box-shadow: var(--shadow);
+      border:1px solid rgba(233,180,76,.22);
+    }
+    section{max-width:var(--maxw);margin:0 auto;padding:18px 16px 22px}
+    .section-title{font-family:"Playfair Display", Georgia, serif;font-size: clamp(20px,5.2vw,28px);margin:0 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+    .col-4{grid-column:span 4}.col-6{grid-column:span 6}.col-8{grid-column:span 8}.col-12{grid-column:span 12}
+    @media (max-width: 900px){ .col-4,.col-6,.col-8{grid-column:span 12} }
+    .service{background:linear-gradient(180deg, rgba(199,31,55,.10), rgba(255,255,255,.02)); border:1px solid rgba(199,31,55,.25)}
+    .list{margin:0 0 0 18px; color:var(--muted); font-size:14px}
+    .contact-card a.btn{margin-right:8px;margin-bottom:8px}
+    footer{ text-align:center; color:var(--muted); padding:20px 12px 70px; border-top:1px solid rgba(233,180,76,.18); font-size:13px }
+    .stripe{height:8px;background: repeating-linear-gradient(90deg,rgba(199,31,55,.9) 0 40px,transparent 40px 60px)}
+    /* mobile call bar */
+    .callbar{
+      position:fixed; bottom:0; left:0; right:0; z-index:20;
+      display:none; gap:8px; padding:10px 12px;
+      background:rgba(12,12,14,.86); backdrop-filter: blur(8px);
+      border-top:1px solid rgba(233,180,76,.18);
+    }
+    .callbar .btn{flex:1; text-align:center}
+    @media (max-width: 768px){ .callbar{display:flex} }
+
+    /* Contacts: only WA/TG; one-per-row on mobile */
+    .contact-actions{display:flex;flex-wrap:wrap;gap:10px}
+    .btn-wide{display:inline-flex;align-items:center;gap:8px}
+    @media (max-width: 768px){
+      .contact-actions .btn-wide{flex:1 1 100%; justify-content:center}
+    }
+  
+    /* === Neon theme enhancements === */
+    :root{
+      --neon-red: #ff2a4e;
+      --neon-gold: #ffd27a;
+      --neon-soft: rgba(255, 210, 122, .25);
+    }
+    .neon-text{ text-shadow: 0 0 8px var(--neon-gold), 0 0 18px rgba(255,210,122,.55) }
+    .neon-red{ text-shadow: 0 0 8px var(--neon-red), 0 0 18px rgba(255,42,78,.55) }
+    .neon-border{ box-shadow:
+        0 0 0 1px rgba(233,180,76,.35) inset,
+        0 0 14px rgba(233,180,76,.25),
+        0 0 30px rgba(199,31,55,.18); }
+    .btn.neon{ box-shadow:
+        0 0 12px rgba(255,42,78,.45),
+        0 0 26px rgba(255,210,122,.25);
+    }
+    .btn-outline.neon{ border-color: rgba(233,180,76,.75) }
+    .stripe{ position: relative; overflow: hidden }
+    .stripe::after{
+      content:""; position:absolute; inset:0; pointer-events:none;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.05), transparent);
+      transform: translateX(-100%);
+      animation: shine 3.8s linear infinite;
+    }
+
+    /* Loader overlay */
+    #loader{
+      position: fixed; inset: 0; z-index: 9999;
+      background: radial-gradient(1000px 500px at 70% -10%, rgba(199,31,55,.25), transparent 60%), #09090b;
+      display:flex; align-items:center; justify-content:center; flex-direction:column;
+      color:#f4f4f6; transition: opacity .6s ease, visibility .6s ease;
+    }
+    #loader.hidden{ opacity:0; visibility:hidden }
+    .load-badge{
+      display:flex; gap:12px; align-items:center;
+      padding:14px 18px; border-radius:16px;
+      border:1px solid rgba(233,180,76,.35);
+      box-shadow: 0 0 18px rgba(255,210,122,.25), inset 0 0 18px rgba(255,210,122,.08);
+      background: rgba(255,255,255,.02);
+    }
+    .load-dot{
+      width:16px;height:16px;border-radius:50%;
+      background: radial-gradient(circle at 40% 40%, #ff5775, #b1122f);
+      box-shadow: 0 0 12px rgba(255,42,78,.65), 0 0 28px rgba(255,42,78,.35);
+      animation: throb 1.6s ease-in-out infinite;
+    }
+    .load-title{
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(22px, 5.5vw, 40px); line-height:1.1;
+      letter-spacing:.3px;
+      text-shadow: 0 0 10px rgba(255,210,122,.45), 0 0 22px rgba(255,42,78,.25);
+    }
+    .load-sub{ color:#b4b6bb; margin-top:6px; font-size:14px; text-align:center }
+    .scanline{
+      width: 200px; height:2px; margin:14px auto 0;
+      background: linear-gradient(90deg, transparent, var(--neon-gold), transparent);
+      filter: blur(.4px);
+      animation: scan 2.8s ease-in-out infinite;
+    }
+    @keyframes throb{ 0%,100%{ transform: scale(1)} 50%{ transform: scale(1.18)} }
+    @keyframes scan{ 0%{ transform: translateX(-40px)} 50%{ transform: translateX(40px)} 100%{ transform: translateX(-40px)} }
+    @keyframes shine{ 0%{ transform: translateX(-100%) } 100%{ transform: translateX(100%) } }
+
+    /* Gentle flicker for big headings */
+    .flicker{ animation: flicker 4.5s linear infinite; }
+    @keyframes flicker{
+      0%, 19.9%, 22%, 62.9%, 64%, 100% { filter: drop-shadow(0 0 0 rgba(255,255,255,0)); opacity:1 }
+      20%, 21.9%, 63%, 63.9% { opacity:.96; text-shadow: 0 0 8px var(--neon-gold),0 0 16px rgba(255,210,122,.5) }
+    }
+
+    /* Reduce motion preference */
+    @media (prefers-reduced-motion: reduce){
+      .flicker, .scanline, .stripe::after, .load-dot{ animation: none !important }
+      #loader{ transition: none }
+    }
+
+  
+    /* --- Mobile fix: keep clinic buttons on one line (iPhone widths) --- */
+    .contact-card > div:last-of-type{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+    }
+    @media (max-width: 640px){
+      .contact-card > div:last-of-type{ flex-wrap:nowrap; justify-content:space-between }
+      .contact-card > div:last-of-type a{ white-space:nowrap; flex:0 1 auto }
+      .contact-card .btn, .contact-card .btn-outline{ padding:10px 14px; font-size:14px }
+    }
+
+  
+    .section-sub{color:var(--muted); margin:-6px 0 12px; font-size:14px}
+    .service .ico{width:18px; height:18px; margin-right:6px; vertical-align:middle; display:inline-block; color:var(--accent); filter: drop-shadow(0 0 6px rgba(233,180,76,.35))}
+    .service h3{display:inline-block; margin-left:6px}
+
+  
+    .about-photo .ph-wrap{display:flex;justify-content:center}
+    .about-photo .ph-box{
+      width:min(100%,680px); aspect-ratio: 3/2; border-radius:16px;
+      border:1px dashed rgba(233,180,76,.45);
+      display:flex; align-items:center; justify-content:center;
+      color:var(--muted); background:rgba(255,255,255,.02);
+      box-shadow: inset 0 0 24px rgba(233,180,76,.07);
+    }
+
+  
+    .certs{margin-top:12px}
+    .cert-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+    .cert{aspect-ratio: 3/2; border-radius:12px; border:1px dashed rgba(233,180,76,.45);
+          display:flex; align-items:center; justify-content:center; color:var(--muted);
+          background:rgba(255,255,255,.02)}
+    @media (max-width: 900px){ .cert-grid{grid-template-columns:repeat(3,1fr)} }
+    @media (max-width: 480px){ .cert-grid{grid-template-columns:repeat(2,1fr)} }
+
+  
+    .contact-cta{color:var(--muted); margin:0 0 10px}
+  
+    @media (max-width: 768px){
+      main{padding-bottom:70px}
+      .service.card{padding:16px}
+      .contact-card .btn, .contact-card .btn-outline{min-height:42px}
+    }
+
+  
+    .reviews{display:grid; grid-template-columns: 1fr 1.2fr; gap:12px; align-items:center}
+    .review-photo.ph{
+      aspect-ratio: 4/3; border:1px dashed rgba(233,180,76,.45);
+      border-radius:14px; display:flex; align-items:center; justify-content:center; color:var(--muted);
+      background:rgba(255,255,255,.02)
+    }
+    .dots{display:flex;gap:8px;justify-content:center;margin-top:10px}
+    .dot{width:8px;height:8px;border-radius:50%;background:rgba(233,180,76,.35)}
+    .dot.active{background:var(--accent)}
+    @media (max-width: 900px){ .reviews{grid-template-columns: 1fr} }
+
+  
+    /* Lightbox for certificates */
+    .cert img{width:100%;height:100%;object-fit:cover;border-radius:12px; border:1px solid rgba(233,180,76,.35); box-shadow: 0 6px 24px rgba(0,0,0,.4)}
+    #lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:9998;padding:20px}
+    #lightbox.open{display:flex}
+    #lightbox img{max-width:96vw;max-height:88vh;border-radius:14px;border:1px solid rgba(233,180,76,.45);box-shadow:0 0 26px rgba(233,180,76,.25), 0 12px 48px rgba(0,0,0,.6)}
+    #lightbox .close{position:absolute;top:14px;right:16px;font-size:28px;color:#ddd;cursor:pointer}
+
+  
+/* Tooth emoji icon for services */
+.service .ico.tooth{width:18px;height:18px;display:inline-block;vertical-align:middle;margin-right:6px;
+  filter: drop-shadow(0 0 6px rgba(233,180,76,.35))}
+
+  
+/* Review images: crop to hide UI elements like 'Подписаться' and dates */
+.review-photo.ph{overflow:hidden; position:relative}
+.review-photo.ph .review-img{width:100%;height:100%;object-fit:cover;object-position:left center;border-radius:14px}
+@media (max-width: 900px){
+  .review-photo.ph{aspect-ratio: 16/10}
+  .review-photo.ph .review-img{object-position:left 45%}
+}
+
+  
+    .review-wrap{max-width:100%;}
+    .review-card{padding:18px}
+    .rev-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+    .rev-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,#b1122f,#ff5775);color:#fff;font-weight:800;box-shadow:0 0 14px rgba(255,42,78,.35)}
+    .rev-meta .rev-name{font-weight:700}
+    .rev-meta .rev-sub{color:var(--muted);font-size:13px;margin-top:2px}
+    .rev-stars{margin-left:auto;letter-spacing:2px;color:#ffcc66;text-shadow:0 0 8px rgba(255,210,122,.35)}
+    .rev-text{color:#e8eaf0}
+
+  
+/* Neon tooth icon for services (bigger + glow) */
+.service .ico.tooth{width:22px;height:22px;vertical-align:middle;margin-right:8px;color:#ffd26a;
+  filter: drop-shadow(0 0 8px rgba(255,210,106,.55)) drop-shadow(0 0 14px rgba(255,160,60,.25));}
+
+  
+/* Clear tooth silhouette icon + neon */
+.service .ico.tooth{width:22px;height:22px;vertical-align:middle;margin-right:8px;color:#ffd977;
+  filter: drop-shadow(0 0 6px rgba(255,217,119,.55)) drop-shadow(0 0 14px rgba(255,160,60,.25));}
+
+  
+/* Lightbox for certificates (robust) */
+.cert{cursor:pointer}
+.cert img{width:100%;height:100%;object-fit:cover;border-radius:12px;border:1px solid rgba(233,180,76,.35);
+  box-shadow:0 6px 24px rgba(0,0,0,.4)}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);opacity:0;pointer-events:none;display:flex;align-items:center;justify-content:center;z-index:9998;padding:20px;transition:opacity .2s ease}
+#lightbox.open{opacity:1;pointer-events:auto}
+#lightbox img{max-width:96vw;max-height:88vh;border-radius:14px;border:1px solid rgba(233,180,76,.45);
+  box-shadow:0 0 26px rgba(233,180,76,.25), 0 12px 48px rgba(0,0,0,.6)}
+#lightbox .close{position:absolute;top:14px;right:16px;font-size:28px;color:#ddd;cursor:pointer}
+
+  
+/* Emoji tooth icon (reliable across platforms) with neon glow */
+.service .ico.tooth-emoji{width:22px;height:22px;vertical-align:middle;margin-right:8px;
+  filter: drop-shadow(0 0 6px rgba(255,217,119,.6)) drop-shadow(0 0 12px rgba(255,160,60,.35));}
+
+  
+/* Lightbox for certificates */
+.cert{cursor:pointer}
+.cert img{width:100%;height:100%;object-fit:cover;border-radius:12px;border:1px solid rgba(233,180,76,.35);
+  box-shadow:0 6px 24px rgba(0,0,0,.4)}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:9998;padding:20px}
+#lightbox.open{display:flex}
+#lightbox img{max-width:96vw;max-height:88vh;border-radius:14px;border:1px solid rgba(233,180,76,.45);
+  box-shadow:0 0 26px rgba(233,180,76,.25), 0 12px 48px rgba(0,0,0,.6)}
+#lightbox .close{position:absolute;top:14px;right:16px;font-size:28px;color:#ddd;cursor:pointer}
+
+  
+/* Strong lightbox for certificates */
+.cert{cursor:pointer}
+.cert img{width:100%;height:100%;object-fit:cover;border-radius:12px;border:1px solid rgba(233,180,76,.35);
+  box-shadow:0 6px 24px rgba(0,0,0,.4)}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px}
+#lightbox.open{display:flex}
+#lightbox img{max-width:96vw;max-height:88vh;border-radius:14px;border:1px solid rgba(233,180,76,.45);
+  box-shadow:0 0 26px rgba(233,180,76,.25), 0 12px 48px rgba(0,0,0,.6)}
+#lightbox .close{position:absolute;top:14px;right:16px;font-size:28px;color:#ddd;cursor:pointer}
+
+
+    /* Service hero image inside modal */
+    .srv-hero{ margin:6px 18px 0; }
+    .srv-img{
+      width:100%; height: clamp(160px, 36vw, 320px); object-fit: cover;
+      border-radius:16px; border:1px solid rgba(233,180,76,.28);
+      box-shadow: var(--shadow);
+      opacity:0; transform: translateY(6px);
+      transition: opacity .35s ease, transform .35s ease;
+      background:rgba(0,0,0,.2);
+    }
+    .srv-modal.open .srv-img{ opacity:1; transform:none }
+
+  </style>
 </head>
 <body>
-<div id="loader" role="status" aria-live="polite">
-  <div class="load-badge"><span class="load-dot"></span><span class="load-title">Аслан&nbsp;Ибрагимов</span></div>
-  <div class="load-sub">стоматолог · хирург-имплантолог · ортопед · терапевт</div>
-  <div class="load-sub">Подготавливаю профиль и материалы…</div>
-  <div class="scanline" aria-hidden="true"></div>
-</div>
-<main>
-<section class="hero">
-  <div>
-    <h1>Аслан Ахмедович Ибрагимов</h1>
-    <div class="subtitle">врач-стоматолог • хирург-имплантолог • ортопед • терапевт</div>
-    <div class="card">
-      <strong>Приём: Московская область — Химки, Красногорск</strong>
-      <div class="badges"><span class="badge">Имплантация</span><span class="badge">Хирургия</span><span class="badge">Ортопедия</span><span class="badge">Терапия</span><span class="badge">Эстетика</span></div>
+
+  <!-- Loader Overlay -->
+  <div id="loader" role="status" aria-live="polite">
+    <div class="load-badge" aria-hidden="true">
+      <span class="load-dot"></span>
+      <span class="load-title">Аслан&nbsp;Ибрагимов</span>
     </div>
-    <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="#contacts">Позвонить</a><a class="btn btn-outline" href="#clinics">Адреса приёма</a></div>
+    <div class="load-sub">стоматолог · хирург‑имплантолог · ортопед · терапевт</div><div class="load-sub" id="load-sub2">Подготавливаю профиль и материалы…</div>
+    <div class="scanline" aria-hidden="true"></div>
   </div>
-  <div class="portrait-wrap"><img class="portrait" src="aslan.jpg" alt="Доктор Ибрагимов Аслан Ахмедович" loading="lazy" decoding="async" /></div>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1 class="neon-text flicker">Аслан Ахмедович Ибрагимов</h1>
+        <div class="subtitle">врач-стоматолог • хирург-имплантолог • ортопед • терапевт</div>
+        <div class="card">
+          <strong>Приём: Московская область — Химки, Красногорск</strong>
+          <div class="badges">
+            <span class="badge">Имплантация</span>
+            <span class="badge">Хирургия</span>
+            <span class="badge">Ортопедия</span>
+            <span class="badge">Терапия</span>
+            <span class="badge">Эстетика</span>
+          </div>
+        </div>
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn" href="#contacts">Позвонить</a>
+          <a class="btn btn-outline" href="#clinics">Адреса приёма</a>
+        </div>
+
+      </div>
+      <div class="portrait-wrap">
+        <img class="portrait" src="aslan.jpg" alt="Доктор Ибрагимов Аслан Ахмедович" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Услуги</h2>
+      <p class="section-sub">Полный цикл: от диагностики и терапевтического лечения до имплантации и протезирования.</p>
+      <div class="grid">
+        <div class="card service col-4"><svg class="ico tooth-emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Имплантация</h3><p>Планирование по КТ, щадящие протоколы, работа с костной и мягкой тканью.</p></div>
+        <div class="card service col-4"><svg class="ico tooth-emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Хирургия</h3><p>Удаление сложных зубов, пластика тканей, подготовка к протезированию.</p></div>
+        <div class="card service col-4"><svg class="ico tooth-emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Ортопедия</h3><p>Коронки, виниры, мосты, тотальные решения; протезирование на имплантах.</p></div>
+        <div class="card service col-4"><svg class="ico tooth-emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Терапия</h3><p>Лечение кариеса и каналов, реставрации, профилактика, гигиена.</p></div>
+        <div class="card service col-4"><svg class="ico tooth-emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Эстетика</h3><p>Отбеливание, микроэстетические реставрации, коррекция формы зубов.</p></div>
+        <div class="card service col-4"><svg class="ico tooth-emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Диагностика</h3><p>Консультации, цифровое планирование, mock‑up.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">О враче</h2>
+      <div class="grid">
+        <div class="card col-8">
+          <p>Практикующий стоматолог с приёмом в Химках и Красногорске. Сочетает бережную хирургию, точную ортопедию и аккуратную терапию. В работе придерживается принципов доказательной стоматологии и прозрачного планирования лечения.</p>
+        </div>
+        <div class="card col-4">
+          <div style="font-weight:700;margin-bottom:6px">Специализация</div>
+          <ul class="list">
+            <li>Имплантация единичная и множественная</li>
+            <li>Костная подготовка, пластика мягких тканей</li>
+            <li>Протезирование на имплантах и зубах</li>
+            <li>Эндодонтия, эстетические реставрации</li>
+          </ul>
+        </div></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Образование и повышение квалификации</h2>
+      <div class="grid">
+        <div class="card col-6">
+          <h3>Базовое и ординатура</h3>
+          <ul class="list">
+            <li>Пензенский государственный университет — «Стоматология» (2021)</li>
+            <li>РМАНПО — «Стоматология общей практики», ординатура (2023)</li>
+            <li>Пензенский институт усовершенствования врачей — «Стоматология хирургическая» (2023)</li>
+            <li>Пензенский институт усовершенствования врачей — «Стоматология ортопедическая» (2023)</li>
+          </ul>
+        </div>
+        <div class="card col-6">
+          <h3>Курсы и мастер‑классы</h3>
+          <ul class="list">
+            <li>Практический курс: металлокерамические и безметалловые коронки и мосты (2015)</li>
+            <li>Реставрация зубов керамическими вкладками и винирами (2016)</li>
+          </ul>
+          <div style="color:var(--muted);font-size:14px;margin-top:8px">*Полный список сертификатов можно добавить по запросу.</div>
+        </div>
+      </div>
+    
+      <div class="card certs">
+        <h3 style="margin-top:0">Дипломы и сертификаты</h3>
+        <div class="cert-grid">
+          <div class="cert"><img onclick="lbOpen(this)" role="button" tabindex="0" class="cert-img" src="cert_1.jpg" alt="Сертификат — Современные концепции в стоматологии (2017)" loading="lazy" decoding="async"/></div>
+          <div class="cert"><img onclick="lbOpen(this)" role="button" tabindex="0" class="cert-img" src="cert_1.jpg" alt="Сертификат — Современные концепции в стоматологии (2017)" loading="lazy" decoding="async"/></div>
+          <div class="cert ph">Место под диплом/сертификат</div>
+          <div class="cert ph">Место под диплом/сертификат</div>
+          <div class="cert ph">Место под диплом/сертификат</div>
+          <div class="cert ph">Место под диплом/сертификат</div>
+        </div>
+      </div>
 </section>
 
-<section id="services">
-  <h2 class="section-title">Услуги</h2>
-  <p style="color:var(--muted);margin:-6px 0 12px;font-size:14px">Полный цикл: от диагностики и терапевтического лечения до имплантации и протезирования.</p>
-  <div class="grid">
-    <a class="card service col-4" href="#srv-implant"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Имплантация</h3><p>Планирование по КТ, щадящие протоколы, работа с костной и мягкой тканью.</p></a>
-    <a class="card service col-4" href="#srv-surgery"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Хирургия</h3><p>Удаление сложных зубов, пластика тканей, подготовка к протезированию.</p></a>
-    <a class="card service col-4" href="#srv-ortho"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Ортопедия</h3><p>Коронки, виниры, мосты, тотальные решения; протезирование на имплантах.</p></a>
-    <a class="card service col-4" href="#srv-therapy"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Терапия</h3><p>Лечение кариеса и каналов, реставрации, профилактика, гигиена.</p></a>
-    <a class="card service col-4" href="#srv-esthetics"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Эстетика</h3><p>Отбеливание, микроэстетические реставрации, коррекция формы зубов.</p></a>
-    <a class="card service col-4" href="#srv-diagnostics"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><h3>Диагностика</h3><p>Консультации, цифровое планирование, mock-up.</p></a>
+    <section id="clinics">
+      <h2 class="section-title">Где принимает</h2>
+      <div class="grid">
+        <div class="card contact-card col-6">
+          <h3>Клиника №1 (Химки)</h3>
+          <div>Адрес: г. Химки, ул. Московская, д. 14</div>
+          <div>Телефон: <a href="tel:+74993220098">+7 (499) 322-00-98</a></div>
+          <div style="margin-top:10px">
+            <a class="btn neon" href="tel:+74993220098">Позвонить</a>
+            <a class="btn neon btn-outline" href="https://himkimed.ru/doctors/ibragimov-aslan-akhmedovich.html" target="_blank" rel="noopener">Страница врача</a>
+          </div>
+        </div>
+        <div class="card contact-card col-6">
+          <h3>Dental Centre (Красногорск)</h3>
+          <div>Адрес: Красногорск, ул. им. Егорова, д. 5</div>
+          <div>Телефон: <a href="tel:+74987540110">8 (498) 754-01-10</a> / <a href="tel:+79263247585">8 (926) 324-75-85</a></div>
+          <div style="margin-top:10px">
+            <a class="btn neon" href="tel:+74987540110">Позвонить</a>
+            <a class="btn neon btn-outline" href="https://www.dental-c.ru/team.html" target="_blank" rel="noopener">Страница клиники</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices">
+      <h2 class="section-title">Стоимость</h2>
+      <div class="card">
+        <p>Первичная консультация стоматолога: <strong>от 2 100 ₽</strong> (ориентир; уточняйте при звонке). Стоимость лечения зависит от объёма и клиники; действуют прайс-листы клиник.</p>
+      </div>
+    </section>
+
+    
+    
+    <section id="reviews">
+      <h2 class="section-title">Отзывы</h2>
+      <div class="review-wrap">
+        <div class="review-card card" id="revCard">
+          <div class="rev-head">
+            <div class="rev-avatar">НЖ</div>
+            <div class="rev-meta">
+              <div class="rev-name">Наталия Ж.</div>
+              <div class="rev-sub">о приёме в Химках</div>
+            </div>
+            <div class="rev-stars" aria-label="Оценка: 5 из 5">★★★★★</div>
+          </div>
+          <div class="rev-text">«Хочу выразить большую благодарность замечательному врачу Ибрагимову Аслану Ахмедовичу! Настоящий профессионал, очень вежливый, аккуратный, знающий своё дело на 100%. Страдала боязнью стоматологов с детства, но Аслану Ахмедовичу удалось расположить к себе, обязательно вернусь. Спасибо!»</div>
+        </div>
+        <div class="dots" id="revDots"></div>
+      </div>
+    </section>
+
+
+
+    <section id="contacts">
+      <h2 class="section-title">Контакты</h2>
+      <div class="grid">
+        <div class="card col-12">
+          <p class="contact-cta">Свяжитесь для консультации или уточнения времени приёма в удобном мессенджере:</p>
+          <div class="contact-actions">
+            <a class="btn neon btn-outline btn-wide" href="https://wa.me/74993220098" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12 2C6.48 2 2 6.06 2 11.2c0 1.72.48 3.33 1.31 4.71L2 22l6.3-1.96c1.3.45 2.7.7 4.17.7 5.52 0 10-4.06 10-9.2S17.52 2 12 2z" stroke="#25D366" stroke-width="1.5"/><path d="M8.9 9.2c.14-.3.3-.3.43-.3h.33c.1 0 .24 0 .36.28.14.34.46 1.18.5 1.26.04.1.07.22-.04.36-.18.22-.5.56-.5.66 0 .13 1 .96 1.93 1.37 1 .44 1.18.36 1.36.2.17-.16.6-.62.76-.84.16-.22.32-.18.53-.1.2.08 1.3.61 1.52.72.22.1.36.16.41.26.06.1.06.6-.12 1.17-.18.58-1.1 1.06-1.51 1.12-.4.06-.9.08-1.47-.09-1.5-.46-3.34-1.5-4.4-2.69C8.3 11 7.9 10 7.84 9.42c-.06-.6.16-.92.3-1.07.13-.16.34-.15.45-.15z" fill="#25D366"/></svg>
+              <span style="margin-left:8px">Написать в WhatsApp</span>
+            </a>
+            <a class="btn neon btn-outline btn-wide" href="https://t.me/aslan_dent" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M21.5 3.5L2.8 10.6c-1 .38-.98 1.8.02 2.16l4.6 1.67 1.77 4.86c.36.98 1.72 1.03 2.13.07l2.1-4.92 4.77-8.9c.48-.9-.42-1.88-1.58-1.34z" fill="#229ED9"/></svg>
+              <span style="margin-left:8px">Написать в Telegram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- mobile call bar -->
+  <div class="callbar">
+    <a class="btn neon" href="tel:+74993220098">Химки</a>
+    <a class="btn neon" href="tel:+74987540110">Красногорск</a>
   </div>
-</section>
 
-<section id="about"><h2 class="section-title">О враче</h2>
-  <div class="grid">
-    <div class="card col-8"><p>Практикующий стоматолог с приёмом в Химках и Красногорске. Сочетает бережную хирургию, точную ортопедию и аккуратную терапию. Придерживается принципов доказательной стоматологии и прозрачного планирования лечения.</p></div>
-    <div class="card col-4"><div style="font-weight:700;margin-bottom:6px">Специализация</div><ul class="list"><li>Имплантация (единичная, множественная)</li><li>Костная подготовка, пластика мягких тканей</li><li>Протезирование на имплантах и зубах</li><li>Эндодонтия, эстетические реставрации</li></ul></div>
-  </div>
-</section>
+  <footer>© <span id="year"></span> Аслан Ахмедович Ибрагимов · Визитка врача. Стиль: чёрно-красный, акцент — точность и уважение.</footer>
 
-<section id="education"><h2 class="section-title">Образование и повышение квалификации</h2>
-  <div class="grid">
-    <div class="card col-6"><h3>Базовое и ординатура</h3><ul class="list"><li>Пензенский государственный университет — «Стоматология» (2021)</li><li>РМАНПО — «Стоматология общей практики», ординатура (2023)</li><li>Пензенский институт усовершенствования врачей — «Стоматология хирургическая» (2023)</li><li>Пензенский институт усовершенствования врачей — «Стоматология ортопедическая» (2023)</li></ul></div>
-    <div class="card col-6"><h3>Курсы и мастер-классы</h3><ul class="list"><li>Металлокерамические и безметалловые коронки и мосты (2015)</li><li>Эндодонтия: современные тенденции дезинфекции, лечения и обтурации (2016)</li><li>Санация и обтурация корневых каналов; стандарты эндодонтического лечения (2016)</li><li>Протезирование на имплантатах (2017)</li><li>Реставрация зубов керамическими вкладками и винирами (2017)</li><li>Инновационные цифровые технологии в дентальной имплантации (2018)</li><li>Адгезивные керамические реставрации (2021)</li><li>Имплантология: планирование и проведение имплантации (2022)</li><li>Несъёмное протезирование: современные аспекты (2022)</li><li>Синус-лифтинг: от простого к сложному (2022)</li><li>Тотальная имплантологическая практика: цифровые и аналоговые инструменты (2023)</li><li>Неотложная помощь в стоматологии: комфортная и безопасная анестезия (2024)</li></ul></div>
-  </div>
-  <div class="card"><h3 style="margin-top:0">Дипломы и сертификаты</h3><div class="cert-grid"><div class="cert"><img onclick="lbOpen(this)" role="button" tabindex="0" class="cert-img" src="cert_1.jpg" alt="Сертификат — Современные концепции в стоматологии (2017)" loading="lazy" decoding="async"/></div><div class="cert">Место под диплом/сертификат</div><div class="cert">Место под диплом/сертификат</div><div class="cert">Место под диплом/сертификат</div><div class="cert">Место под диплом/сертификат</div><div class="cert">Место под диплом/сертификат</div></div></div>
-</section>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  
+    // Loader hide logic
+    (function(){
+      const loader = document.getElementById('loader');
+      const dismiss = () => loader && loader.classList.add('hidden');
+      let timeout = setTimeout(dismiss, 7000); // fallback
+      window.addEventListener('load', () => {
+        clearTimeout(timeout);
+        setTimeout(dismiss, 1500); // short grace after load
+      });
+      // Accessibility: allow dismiss with keyboard
+      document.addEventListener('keydown', (e)=>{
+        if(e.key === 'Escape'){ dismiss(); }
+      });
+    })();
 
-<section id="clinics"><h2 class="section-title">Где принимает</h2>
-  <div class="grid">
-    <div class="card col-6"><h3>Клиника №1 (Химки)</h3><div>Адрес: г. Химки, ул. Московская, д. 14</div><div>Телефон: <a href="tel:+74993220098">+7 (499) 322-00-98</a></div><div class="actions" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px"><a class="btn" href="tel:+74993220098">Позвонить</a><a class="btn btn-outline" href="https://himkimed.ru/doctors/ibragimov-aslan-akhmedovich.html" target="_blank" rel="noopener">Страница врача</a></div></div>
-    <div class="card col-6"><h3>Dental Centre (Красногорск)</h3><div>Адрес: Красногорск, ул. им. Егорова, д. 5</div><div>Телефон: <a href="tel:+74987540110">8 (498) 754-01-10</a> / <a href="tel:+79263247585">8 (926) 324-75-85</a></div><div class="actions" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px"><a class="btn" href="tel:+74987540110">Позвонить</a><a class="btn btn-outline" href="https://www.dental-c.ru/team.html" target="_blank" rel="noopener">Страница клиники</a></div></div>
-  </div>
-</section>
+  
+    // Reviews slider (placeholders)
+    (function(){
+      const quotes = [
+        {t:'«Спокойный, внимательный доктор. Всё объяснил, без боли. Рекомендую.»', a:'— Пациент, Химки'},
+        {t:'«Уверенная имплантация, аккуратная работа. Чувствуется опыт.»', a:'— Пациент, Красногорск'},
+        {t:'«Протезирование сделано безупречно. Спасибо!»', a:'— Пациент'}
+      ];
+      const box = document.getElementById('reviewBox');
+      const dots = document.getElementById('revDots');
+      if(!box || !dots) return;
+      let i = 0;
+      quotes.forEach((_, idx)=>{
+        const d = document.createElement('div'); d.className = 'dot'+(idx===0?' active':'');
+        dots.appendChild(d);
+      });
+      function render(){
+        box.style.opacity = 0.5;
+        setTimeout(()=>{
+          box.innerHTML = '<div style="font-style:italic">'+quotes[i].t+'</div><div style="margin-top:8px; font-size:13px; color:var(--muted)">'+quotes[i].a+'</div>';
+          [...dots.children].forEach((d, idx)=>d.classList.toggle('active', idx===i));
+          box.style.opacity = 1;
+        }, 150);
+        i = (i+1) % quotes.length;
+      }
+      setInterval(render, 4000);
+    })();
 
-<section id="prices"><h2 class="section-title">Стоимость</h2><div class="card"><p>Первичная консультация стоматолога: <strong>от 2 100 ₽</strong> (ориентир; уточняйте при звонке). Стоимость лечения зависит от объёма и клиники; действуют прайс-листы клиник.</p></div></section>
+  
+    
+  
+// Reviews slider with images
+(function(){
+  const imgEl = document.getElementById('reviewImg');
+  const quotes = [
+    {t:'«Спокойный, внимательный доктор. Всё объяснил, без боли. Рекомендую.»', a:'— Пациент, Химки', img:'review1.jpg'},
+    {t:'«Уверенная имплантация, аккуратная работа. Чувствуется опыт.»', a:'— Пациент, Красногорск', img:'review2.jpg'},
+    {t:'«Протезирование сделано безупречно. Спасибо!»', a:'— Пациент', img:'review3.jpg'}
+  ];
+  // Preload
+  quotes.forEach(q=>{ const im = new Image(); im.src = q.img; });
+  const box = document.getElementById('reviewBox');
+  const dots = document.getElementById('revDots');
+  if(!box || !dots || !imgEl) return;
+  let i = 0;
+  quotes.forEach((_, idx)=>{
+    const d = document.createElement('div'); d.className = 'dot'+(idx===0?' active':'');
+    dots.appendChild(d);
+  });
+  function render(){
+    box.style.opacity = 0.5;
+    imgEl.style.opacity = 0.6;
+    setTimeout(()=>{
+      box.innerHTML = '<div style="font-style:italic">'+quotes[i].t+'</div><div style="margin-top:8px; font-size:13px; color:var(--muted)">'+quotes[i].a+'</div>';
+      imgEl.src = quotes[i].img;
+      [...dots.children].forEach((d, idx)=>d.classList.toggle('active', idx===i));
+      box.style.opacity = 1;
+      imgEl.style.opacity = 1;
+    }, 150);
+    i = (i+1) % quotes.length;
+  }
+  setInterval(render, 4200);
+})();
 
-<section id="reviews"><h2 class="section-title">Отзывы</h2><div class="card" id="revCard"></div><div class="dots" id="revDots" style="margin-top:10px"></div></section>
+  
+    // Text-only reviews carousel (no photos)
+    (function(){
+      const data = [
+        {
+          name:'Наталия Ж.',
+          sub:'о приёме в Химках',
+          text:'«Хочу выразить большую благодарность замечательному врачу Ибрагимову Аслану Ахмедовичу! Настоящий профессионал, очень вежливый, аккуратный, знающий своё дело на 100%. Страдала боязнью стоматологов с детства, но Аслану Ахмедовичу удалось расположить к себе, обязательно вернусь. Спасибо!»'
+        },
+        {
+          name:'Алла Кошелева',
+          sub:'имплантация, Дентал Центр',
+          text:'«Давно посещаю клинику Dental Centre и хочу выразить благодарность за профессиональный подход и внимательное отношение. Сейчас занимаюсь имплантацией зубов — очень рекомендую Аслана, профессионала своего дела: делает качественно и чётко. Спасибо всей команде клиники!»'
+        },
+        {
+          name:'Алла Тынчерова',
+          sub:'удаление зуба, Красногорск',
+          text:'«Пришла с острой болью — оказалось, киста и удаление. Отмечу профессионализм врача Ибрагимова Аслана: всё объяснил, поддержал, безболезненно. Персонал приветливый, цены не заоблачные. Всем рекомендую!»'
+        }
+      ];
+      const card = document.getElementById('revCard');
+      const dots = document.getElementById('revDots');
+      if(!card || !dots) return;
+      // Build dots
+      data.forEach((_,i)=>{
+        const d = document.createElement('div');
+        d.className='dot'+(i===0?' active':'');
+        d.addEventListener('click', ()=>{ idx=i; render(); });
+        dots.appendChild(d);
+      });
+      let idx=0;
+      function render(){
+        const d = data[idx];
+        const initials = d.name.split(' ').map(s=>s[0]).slice(0,2).join('').toUpperCase();
+        card.style.opacity=.6;
+        setTimeout(()=>{
+          card.innerHTML = `
+            <div class="rev-head">
+              <div class="rev-avatar">${initials}</div>
+              <div class="rev-meta">
+                <div class="rev-name">${d.name}</div>
+                <div class="rev-sub">${d.sub||''}</div>
+              </div>
+              <div class="rev-stars" aria-label="Оценка: 5 из 5">★★★★★</div>
+            </div>
+            <div class="rev-text">${d.text}</div>
+          `;
+          [...dots.children].forEach((el, i)=>el.classList.toggle('active', i===idx));
+          card.style.opacity=1;
+        },140);
+        idx = (idx+1)%data.length;
+      }
+      setInterval(render, 5200);
+    })();
 
-<section id="contacts"><h2 class="section-title">Контакты</h2><div class="card"><p style="color:var(--muted);margin:0 0 10px">Свяжитесь для консультации или уточнения времени приёма в удобном мессенджере:</p><div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-outline" href="https://wa.me/74993220098" target="_blank" rel="noopener">Написать в WhatsApp</a><a class="btn btn-outline" href="https://t.me/aslan_dent" target="_blank" rel="noopener">Написать в Telegram</a></div></div></section>
-</main>
+  
 
-<div class="callbar"><a class="btn" href="tel:+74993220098">Химки</a><a class="btn" href="tel:+74987540110">Красногорск</a></div>
-<footer>© <span id="year"></span> Аслан Ахмедович Ибрагимов · Визитка врача. Стиль: чёрно-красный, акцент — точность и уважение.</footer>
+  
 
-<div id="lightbox" aria-modal="true" role="dialog" onclick="lbClose(event)"><span class="close" aria-label="Закрыть" onclick="lbClose(event)">×</span><img alt="" onclick="lbClose(event)"/></div>
+  
 
-<!-- CSS :target service modals -->
-<div id="srv-implant" class="srv-modal"><a class="srv-bg" href="#close"></a><div class="srv-card" role="dialog" aria-labelledby="t-implant"><a class="srv-close" href="#close">×</a><div class="srv-head"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><div><h3 id="t-implant" class="srv-title">Имплантация</h3><div class="srv-sub">восстановление функции и эстетики</div></div></div><div class="srv-body"><p style="color:#e8eaf0">Имплантация — восстановление утраченного зуба с помощью титанового корня (импланта). Планирование по КТ и щадящие протоколы обеспечивают предсказуемый результат.</p><div style="font-weight:700;margin:10px 0 6px">Краткий процесс</div><ul class="list"><li>Консультация, фото</li><li>КТ и планирование</li><li>Подготовка тканей по показаниям</li><li>Установка импланта</li><li>Интеграция, формирователь</li><li>Сканирование/фиксация коронки</li></ul></div></div></div>
+  
 
-<div id="srv-surgery" class="srv-modal"><a class="srv-bg" href="#close"></a><div class="srv-card" role="dialog" aria-labelledby="t-surgery"><a class="srv-close" href="#close">×</a><div class="srv-head"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><div><h3 id="t-surgery" class="srv-title">Хирургия</h3><div class="srv-sub">бережные вмешательства</div></div></div><div class="srv-body"><p style="color:#e8eaf0">Удаление сложных зубов, пластика мягких тканей, подготовка к протезированию. Щадящие протоколы и подробные рекомендации.</p><div style="font-weight:700;margin:10px 0 6px">Краткий процесс</div><ul class="list"><li>Осмотр и анестезия</li><li>Атравматичное вмешательство</li><li>Гемостаз и швы</li><li>Памятка и контроль</li></ul></div></div></div>
+  
+// Ultra-robust lightbox: open on thumbnail, close on overlay/X/big image/Esc
+(function(){
+  window.lbOpen = function(imgEl){
+    var lb = document.getElementById('lightbox'); if(!lb) return;
+    var viewer = lb.querySelector('img');
+    viewer.src = imgEl.getAttribute('src');
+    viewer.alt = imgEl.getAttribute('alt') || '';
+    lb.classList.add('open');
+  };
+  window.lbClose = function(ev){
+    var lb = document.getElementById('lightbox'); if(!lb) return;
+    if(ev) ev.stopPropagation();
+    lb.classList.remove('open');
+  };
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ window.lbClose(); }
+  });
+})();
 
-<div id="srv-ortho" class="srv-modal"><a class="srv-bg" href="#close"></a><div class="srv-card" role="dialog" aria-labelledby="t-ortho"><a class="srv-close" href="#close">×</a><div class="srv-head"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><div><h3 id="t-ortho" class="srv-title">Ортопедия</h3><div class="srv-sub">протезирование на зубах и имплантах</div></div></div><div class="srv-body"><p style="color:#e8eaf0">Коронки, виниры, мосты и протезы (включая импланты). Цифровой подход — точная посадка и естественная эстетика.</p><div style="font-weight:700;margin:10px 0 6px">Краткий процесс</div><ul class="list"><li>Диагностика</li><li>Подготовка/сканирование</li><li>Примерка</li><li>Фиксация и рекомендации</li></ul></div></div></div>
+  </script>
 
-<div id="srv-therapy" class="srv-modal"><a class="srv-bg" href="#close"></a><div class="srv-card" role="dialog" aria-labelledby="t-therapy"><a class="srv-close" href="#close">×</a><div class="srv-head"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><div><h3 id="t-therapy" class="srv-title">Терапия</h3><div class="srv-sub">лечение кариеса и каналов</div></div></div><div class="srv-body"><p style="color:#e8eaf0">Лечение кариеса, воспалений и профилактика заболеваний. Аккуратная работа с контролем окклюзии и полировкой.</p><div style="font-weight:700;margin:10px 0 6px">Краткий процесс</div><ul class="list"><li>Осмотр, снимок</li><li>Анестезия</li><li>Лечение кариеса/каналов</li><li>Реставрация и полировка</li></ul></div></div></div>
-
-<div id="srv-esthetics" class="srv-modal"><a class="srv-bg" href="#close"></a><div class="srv-card" role="dialog" aria-labelledby="t-esthetics"><a class="srv-close" href="#close">×</a><div class="srv-head"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><div><h3 id="t-esthetics" class="srv-title">Эстетика</h3><div class="srv-sub">отбеливание, микрореставрации</div></div></div><div class="srv-body"><p style="color:#e8eaf0">Офисное/домашнее отбеливание, микрореставрации, коррекция формы. Планируем результат по фото.</p><div style="font-weight:700;margin:10px 0 6px">Краткий процесс</div><ul class="list"><li>Фото и согласование</li><li>Гигиена</li><li>Процедура</li><li>Рекомендации</li></ul></div></div></div>
-
-<div id="srv-diagnostics" class="srv-modal"><a class="srv-bg" href="#close"></a><div class="srv-card" role="dialog" aria-labelledby="t-diagnostics"><a class="srv-close" href="#close">×</a><div class="srv-head"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="0" y=".82em" font-size="82">🦷</text></svg><div><h3 id="t-diagnostics" class="srv-title">Диагностика</h3><div class="srv-sub">точный план на старте</div></div></div><div class="srv-body"><p style="color:#e8eaf0">Консультация, фото, КТ/рентген при необходимости. По итогам — понятный пошаговый план лечения.</p><div style="font-weight:700;margin:10px 0 6px">Краткий процесс</div><ul class="list"><li>Сбор анамнеза и осмотр</li><li>Фото, КТ/рентген</li><li>Обсуждение вариантов</li><li>Выбор оптимального плана</li></ul></div></div></div>
-
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-(function(){const loader=document.getElementById('loader');const hide=()=>loader&&loader.classList.add('hidden');window.addEventListener('load',hide);setTimeout(hide,2000)})();
-function lbOpen(el){const lb=document.getElementById('lightbox');const img=lb.querySelector('img');img.src=el.src;img.alt=el.alt||'';lb.classList.add('open')}function lbClose(ev){const lb=document.getElementById('lightbox');if(ev)ev.stopPropagation();lb.classList.remove('open')}
-(function(){const data=[{name:'Наталия Ж.',sub:'о приёме в Химках',text:'«Хочу выразить большую благодарность замечательному врачу Ибрагимову Аслану Ахмедовичу! Настоящий профессионал, вежливый и аккуратный. Спасибо!»'},{name:'Алла Кошелева',sub:'имплантация, Дентал Центр',text:'«Давно посещаю клинику Dental Centre. Занимаюсь имплантацией — очень рекомендую Аслана, профессионала своего дела.»'},{name:'Алла Тынчерова',sub:'удаление зуба, Красногорск',text:'«С острой болью попала к доктору. Всё объяснил, поддержал, лечение прошло безболезненно. Рекомендую!»'}];const card=document.getElementById('revCard'),dots=document.getElementById('revDots');if(!card||!dots)return;data.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.style.cursor='pointer';d.addEventListener('click',()=>{idx=i;render(true)});dots.appendChild(d)});let idx=0,timer=null;function render(reset){const d=data[idx];const ini=d.name.split(' ').map(s=>s[0]).slice(0,2).join('').toUpperCase();card.innerHTML=`<div style="display:flex;align-items:center;gap:12px;margin-bottom:10px"><div style="width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#b1122f,#ff5775);color:#fff;font-weight:800">${ini}</div><div><div style="font-weight:700">${d.name}</div><div style="color:var(--muted);font-size:13px;margin-top:2px">${d.sub||''}</div></div><div style="margin-left:auto;letter-spacing:2px;color:#ffcc66">★★★★★</div></div><div style="color:#e8eaf0">${d.text}</div>`;[...dots.children].forEach((el,i)=>el.classList.toggle('active',i===idx));idx=(idx+1)%data.length;if(reset){clearInterval(timer);timer=setInterval(()=>render(),5200)}}timer=setInterval(()=>render(),5200);render()})();
-</script>
+  <div id="lightbox" aria-modal="true" role="dialog" onclick="lbClose(event)"><span class="close" aria-label="Закрыть" onclick="lbClose(event)">×</span><img alt="" onclick="lbClose(event)"/></div>
 </body>
 </html>
